@@ -6,9 +6,12 @@ Here we take the Cut-Through-The-Noise-and-Give-Me-The-Recipe field's best and b
 recipe-card-filtering premise to generate a 'focused' screenshot. 
 
 mod.js can be used in conjunction with [capture-website-cli](https://github.com/sindresorhus/capture-website-cli)
+
 A png of a recipe card is generated with `capture-website` with this command:
 
-    capture-website URL --full-page --output=FILENAME.png --overwrite --module=mod.js
+    capture-website https://www.bowlofdelicious.com/two-ingredient-crispy-oven-baked-bbq-chicken/ --full-page --output=img/bbq.png --overwrite --module=mod.js
+
+![recipeimage](img/bbq.png "Two Ingredient BBQ Chicken")
 
 ## Raspberry Pi Notes:
 Do NOT use chromium 78 for this. Puppeteer in capture-website-cli requires Chromium 80
