@@ -48,4 +48,5 @@ recipe_selectors = [
             return true;
         })
     }
+    cleanUp();
 })();
